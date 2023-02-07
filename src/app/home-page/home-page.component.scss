@@ -9,7 +9,24 @@
     height: 100%;
     align-items: left;
   }
-  
+  /*
   .sidenav {
     padding: 20px;
   }
+  */
+
+table {
+  align-items: center;
+  width: 100%;
+  padding: 20;
+}
+
+.mat-sorta {
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
