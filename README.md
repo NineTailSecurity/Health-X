@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# Health-X
+=======
+>>>>>>> 9fbf6e0 (Broke table so removing it and will try again tom)
 # SideOfAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
@@ -25,3 +31,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<<<<<<< HEAD
+=======
+>>>>>>> 0ca36a0 (initial commit)
+>>>>>>> 9fbf6e0 (Broke table so removing it and will try again tom)
