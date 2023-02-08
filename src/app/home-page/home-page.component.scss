@@ -2,24 +2,54 @@
     width: auto;
     height: 1080px;
     border: 1px solid rgba(0, 0, 0, 0.5);
+    overflow: hidden;
   }
   
   .sidenav-content {
     display: flex;
+    overflow: hidden;
     height: 100%;
     align-items: left;
-    padding-top: 5px;
+    padding-top: 10px;
   }
   
   .sidenav {
     padding: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
-  
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+  //color: white;
+}
+
+.mat-primary {
+  background-color: aqua;
+  color: #fff;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
 
 table {
   align-items: center;
   width: 100%;
-  padding: 20;
+  padding: 20px;
 }
 
 .mat-sorta {
@@ -31,6 +61,7 @@ table {
 th.mat-sort-header-sorted {
   color: black;
 }
+
 
 /*
 .example-form {
