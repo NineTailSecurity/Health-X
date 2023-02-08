@@ -1,24 +1,47 @@
 <h2>{{ welcome }}</h2>
+
+<!-- 
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label> Name </mat-label>
+    <input type="text"
+           placeholder="Pick one"
+           aria-label="Name"
+           matInput
+           [formControl]="myControl"
+           [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let e of options" [value]="e">
+        {{ e }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+-->
+
 <hr /> 
-<p> This should only be visible on home</p>
 
 <mat-drawer-container class="sidenav-container" autosize>
     <mat-drawer #drawer class="sidenav" mode="side">
       <p>Auto-resizing sidenav</p>
-      <p *ngIf="showFiller">Fixing pull request issue hopefully this time it works but did not</p>
-      <button (click)="showFiller = !showFiller" mat-raised-button>
-        Toggle extra text
+      <button>
+        unused button
       </button>
     </mat-drawer>
   
     <div class="sidenav-content">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        Toggle sidenav
-      </button>
+      <div class="example-button-row">
+        <div class="example-flex-container">
+          <div class="example-button-container">
+            <button type="button" mat-fab color="primary" (click)="drawer.toggle()">
+              <mat-icon>menu</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
     <div class="mat-sorta">
       <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)"
         class="mat-elevation-z8">
- 
         <!-- Position Column -->
         <ng-container matColumnDef="position">
           <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by number">

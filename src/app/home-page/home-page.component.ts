@@ -2,6 +2,7 @@ import {LiveAnnouncer} from '@angular/cdk/a11y';
 import {AfterViewInit, Component, ViewChild} from '@angular/core';
 import {MatSort, Sort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import {FormControl} from '@angular/forms';
 
 export interface PeriodicElement {
   name: string;
@@ -9,6 +10,7 @@ export interface PeriodicElement {
   weight: number;
   symbol: string;
 }
+
 const ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
   {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
@@ -31,6 +33,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class HomePageComponent {
   welcome = 'Hello and Welcome to X Health'
   showFiller = false;
+  
+/* 
+  myControl = new FormControl('');
+  options: string[] = ['One', 'Two', 'Three'];
+*/
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
