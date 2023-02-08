@@ -21,17 +21,14 @@
 
 .example-button-row {
   display: table-cell;
-  max-width: 600px;
+  width: 80px;
+  padding-left: 8px;
+  padding-right: 3px;
 }
 
 .example-button-row .mat-mdc-button-base {
-  margin: 8px 8px 8px 0;
+  margin: 8px 8px 8px 8px;
   //color: white;
-}
-
-.mat-primary {
-  background-color: aqua;
-  color: #fff;
 }
 
 .example-flex-container {
@@ -52,6 +49,15 @@ table {
   padding: 20px;
 }
 
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
+}
+
 .mat-sorta {
   align-items: center;
   width: 100%;
@@ -61,17 +67,3 @@ table {
 th.mat-sort-header-sorted {
   color: black;
 }
-
-
-/*
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-}
-
-.example-full-width {
-  width: 100%;
-}
-
-*/
