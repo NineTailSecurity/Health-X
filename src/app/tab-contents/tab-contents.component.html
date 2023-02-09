@@ -2,11 +2,24 @@
     <mat-tab label="Short tab">
       <div class="example-small-box mat-elevation-z4">
         Main table
+        <app-home-page></app-home-page>
       </div>
     </mat-tab>
     <mat-tab label="Long tab">
       <div class="example-large-box mat-elevation-z4">
-        Extra Table
+        Extra Table for notes maybe
+        <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Outline form field</mat-label>
+              <input matInput placeholder="Placeholder">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+          </p>
+        <mat-form-field appearance="fill">
+            <mat-label>Textarea</mat-label>
+            <textarea matInput></textarea>
+          </mat-form-field>
         <app-home-page></app-home-page> 
       </div>
     </mat-tab>
