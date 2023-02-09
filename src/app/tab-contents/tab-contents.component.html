@@ -1,12 +1,14 @@
-<p>tab-contents works!</p>
-<ng-container *ngIf="(asyncTabs | async) === null">
-    Loading tabs...
-  </ng-container>
-  
-  <mat-tab-group>
-    <mat-tab *ngFor="let tab of asyncTabs | async">
-      <ng-template mat-tab-label>{{tab.label}}</ng-template>
-      {{tab.content}}
+<mat-tab-group dynamicHeight>
+    <mat-tab label="Short tab">
+      <div class="example-small-box mat-elevation-z4">
+        Small content
+      </div>
+    </mat-tab>
+    <mat-tab label="Long tab">
+      <div class="example-large-box mat-elevation-z4">
+        Large content
+        <app-home-page></app-home-page> 
+      </div>
     </mat-tab>
   </mat-tab-group>
   
