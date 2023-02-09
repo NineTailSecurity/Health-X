@@ -11,12 +11,14 @@ import { MaterialExampleModule } from '../material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TabContentsComponent } from './tab-contents/tab-contents.component';
+import { MainTableComponent } from './main-table/main-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    TabContentsComponent
+    TabContentsComponent,
+    MainTableComponent
   ],
   imports: [
     MaterialExampleModule,
