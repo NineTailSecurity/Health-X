@@ -2,8 +2,9 @@ import {LiveAnnouncer} from '@angular/cdk/a11y';
 import {AfterViewInit, Component, ViewChild} from '@angular/core';
 import {MatSort, Sort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
-import {FormControl} from '@angular/forms';
+import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
 import {MatPaginator} from '@angular/material/paginator';
+import {ErrorStateMatcher} from '@angular/material/core';
 
 export interface UserData {
   id: string;
@@ -44,6 +45,18 @@ const NAMES: string[] = [
   'Elizabeth',
 ];
 
+
+
+/** Error when invalid control is dirty, touched, or submitted. */
+/* apart of select bar */
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  }
+}
+
+
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -80,6 +93,19 @@ export class HomePageComponent {
       this.dataSource.paginator.firstPage();
     }
   }
+
+  /* This is selection field  */
+  selected = new FormControl('valid', [Validators.required, Validators.pattern('valid')]);
+
+  selectFormControl = new FormControl('valid', [Validators.required, Validators.pattern('valid')]);
+
+  nativeSelectFormControl = new FormControl('valid', [
+    Validators.required,
+    Validators.pattern('valid'),
+  ]);
+
+  matcher = new MyErrorStateMatcher();
+
 }
 
 /** Builds and returns a new User. */
