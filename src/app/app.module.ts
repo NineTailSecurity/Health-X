@@ -10,11 +10,13 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { MaterialExampleModule } from '../material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TabContentsComponent } from './tab-contents/tab-contents.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    TabContentsComponent
   ],
   imports: [
     MaterialExampleModule,
