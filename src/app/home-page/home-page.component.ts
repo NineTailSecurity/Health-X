@@ -6,6 +6,7 @@ import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/form
 import {MatPaginator} from '@angular/material/paginator';
 import {ErrorStateMatcher} from '@angular/material/core';
 
+/*
 export interface UserData {
   id: string;
   name: string;
@@ -46,16 +47,17 @@ const NAMES: string[] = [
 ];
 
 
-
+*/
 /** Error when invalid control is dirty, touched, or submitted. */
 /* apart of select bar */
+/*
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
     const isSubmitted = form && form.submitted;
     return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
   }
 }
-
+*/
 
 @Component({
   selector: 'app-home-page',
@@ -66,6 +68,8 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 export class HomePageComponent {
   welcome = 'Hello and Welcome to X Health'
   showFiller = false;
+
+  /*
   displayedColumns: string[] = ['id', 'name', 'progress', 'fruit'];
   dataSource: MatTableDataSource<UserData>;
 
@@ -94,7 +98,7 @@ export class HomePageComponent {
     }
   }
 
-  /* This is selection field  */
+  /* This is selection field  */ /*
   selected = new FormControl('valid', [Validators.required, Validators.pattern('valid')]);
 
   selectFormControl = new FormControl('valid', [Validators.required, Validators.pattern('valid')]);
@@ -108,7 +112,7 @@ export class HomePageComponent {
 
 }
 
-/** Builds and returns a new User. */
+/** Builds and returns a new User. */ /*
 function createNewUser(id: number): UserData {
   const name =
     NAMES[Math.round(Math.random() * (NAMES.length - 1))] +
@@ -122,4 +126,5 @@ function createNewUser(id: number): UserData {
     progress: Math.round(Math.random() * 100).toString(),
     fruit: FRUITS[Math.round(Math.random() * (FRUITS.length - 1))],
   };
+   */
 }
