@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./tab-contents.component.scss']
 })
 export class TabContentsComponent {
-  
+
 }

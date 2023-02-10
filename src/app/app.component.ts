@@ -1,7 +1,7 @@
-import {DataSource} from '@angular/cdk/collections';
-import {Component} from '@angular/core';
-import {BehaviorSubject, Observable} from 'rxjs';
-import {CdkTableModule} from '@angular/cdk/table';
+import { DataSource } from '@angular/cdk/collections';
+import { Component } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { CdkTableModule } from '@angular/cdk/table';
 
 /*
 export interface Tile {
