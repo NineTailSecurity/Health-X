@@ -1,10 +1,10 @@
-import {LiveAnnouncer} from '@angular/cdk/a11y';
-import {AfterViewInit, Component, ViewChild} from '@angular/core';
-import {MatSort, Sort} from '@angular/material/sort';
-import {MatTableDataSource} from '@angular/material/table';
-import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
-import {MatPaginator} from '@angular/material/paginator';
-import {ErrorStateMatcher} from '@angular/material/core';
+import { LiveAnnouncer } from '@angular/cdk/a11y';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { MatSort, Sort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
+import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { MatPaginator } from '@angular/material/paginator';
+import { ErrorStateMatcher } from '@angular/material/core';
 
 /*
 export interface UserData {
@@ -113,18 +113,18 @@ export class HomePageComponent {
 }
 
 /** Builds and returns a new User. */ /*
-function createNewUser(id: number): UserData {
-  const name =
-    NAMES[Math.round(Math.random() * (NAMES.length - 1))] +
-    ' ' +
-    NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) +
-    '.';
-
-  return {
-    id: id.toString(),
-    name: name,
-    progress: Math.round(Math.random() * 100).toString(),
-    fruit: FRUITS[Math.round(Math.random() * (FRUITS.length - 1))],
-  };
-   */
+  function createNewUser(id: number): UserData {
+    const name =
+      NAMES[Math.round(Math.random() * (NAMES.length - 1))] +
+      ' ' +
+      NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) +
+      '.';
+  
+    return {
+      id: id.toString(),
+      name: name,
+      progress: Math.round(Math.random() * 100).toString(),
+      fruit: FRUITS[Math.round(Math.random() * (FRUITS.length - 1))],
+    };
+     */
 }

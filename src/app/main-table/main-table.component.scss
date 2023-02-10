@@ -1,23 +1,23 @@
 .sidenav-container {
-    width: auto;
-    height: 1080px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-  }
-  
-  .sidenav-content {
-    display: flex;
-    overflow: hidden;
-    height: 100%;
-    align-items: left;
-    padding-top: 10px;
-  }
-  
-  .sidenav {
-    padding: 20px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
+  width: auto;
+  height: 1080px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.sidenav-content {
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  align-items: left;
+  padding-top: 10px;
+}
+
+.sidenav {
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
 .example-button-row {
   display: table-cell;
@@ -54,7 +54,8 @@ table {
   width: 100%;
 }
 
-td, th {
+td,
+th {
   width: 25%;
 }
 

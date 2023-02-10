@@ -1,10 +1,10 @@
-import {LiveAnnouncer} from '@angular/cdk/a11y';
-import {AfterViewInit, Component, ViewChild} from '@angular/core';
-import {MatSort, Sort} from '@angular/material/sort';
-import {MatTableDataSource} from '@angular/material/table';
-import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
-import {MatPaginator} from '@angular/material/paginator';
-import {ErrorStateMatcher} from '@angular/material/core';
+import { LiveAnnouncer } from '@angular/cdk/a11y';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { MatSort, Sort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
+import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { MatPaginator } from '@angular/material/paginator';
+import { ErrorStateMatcher } from '@angular/material/core';
 
 export interface UserData {
   id: string;
@@ -64,7 +64,7 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 export class MainTableComponent {
   welcome = 'Hello and Welcome to X Health'
   showFiller = false;
-  
+
   displayedColumns: string[] = ['id', 'name', 'progress', 'fruit'];
   dataSource: MatTableDataSource<UserData>;
 
@@ -73,7 +73,7 @@ export class MainTableComponent {
 
   constructor() {
     // Create 100 users
-    const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
+    const users = Array.from({ length: 100 }, (_, k) => createNewUser(k + 1));
 
     // Assign the data to the data source for the table to render
     this.dataSource = new MatTableDataSource(users);
