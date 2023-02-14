@@ -19,7 +19,7 @@ export interface Tile {
 })
 
 export class AppComponent {
-  title = 'sideOfAngular';
+  title = 'NEXT Applications';
   /*
   tiles: Tile[] = [
     {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
